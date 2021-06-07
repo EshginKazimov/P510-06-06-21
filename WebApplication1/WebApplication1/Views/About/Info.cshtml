@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "Info";
+    List<Student> students = Model;
+}
+
+@foreach (Student student in students)
+{
+    <p>@student.ToString()</p>
+}
+

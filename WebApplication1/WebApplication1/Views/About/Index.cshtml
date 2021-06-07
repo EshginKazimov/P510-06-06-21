@@ -1,0 +1,15 @@
+﻿@model AboutViewModel
+@{
+    ViewData["Title"] = "About Index";
+}
+
+@foreach (Student student in Model.Students)
+{
+    <p>@student.ToString()</p>
+}
+
+@foreach (Group group in Model.Groups)
+{
+    <p>@group.Name</p>
+}
+

@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Index";
+}
+
+@*<h1>@ViewBag.Hello</h1>*@
+<h1>@ViewBag.Bye</h1>
+<h1>@ViewData["Hello"]</h1>
+<h1>@TempData["Group"]</h1>
+<h1>@ViewBag.Student.ToString()</h1>
+
+@foreach (Student student in ViewBag.Students)
+{
+    <p>@student.ToString()</p>
+}
+@*<h1>@ViewData["Bye"]</h1>*@
